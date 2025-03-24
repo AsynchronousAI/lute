@@ -1,9 +1,5 @@
 local pp = require("@batteries/pp")
 local task = require("@std/task")
-local random = require("@std/random")
+local math = require("@std/math")
 
-local robj = random.new(os.time())
-
-print(robj:NextNumber())
-print(robj:NextNumber())
-print(robj:NextInteger(1, 10))
+print(pp(math.factors(56)))
