@@ -1,0 +1,4 @@
+[dependency]
+name = "ffi"
+remote = "https://github.com/blade-lang/ffi"
+branch = "main"

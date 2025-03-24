@@ -28,6 +28,26 @@ target_sources(Lute.Net PRIVATE
     net/src/net.cpp
 )
 
+target_sources(Lute.Ffi PRIVATE
+    ffi/include/lute/ast.h
+    ffi/include/lute/ffi.h
+    ffi/include/lute/lib.h
+    ffi/include/lute/libffi.h
+    ffi/include/lute/lua.h
+    ffi/include/lute/parser.h
+    ffi/include/lute/platform.h
+    ffi/include/lute/util.h
+
+    ffi/src/ast.cpp
+    ffi/src/ffi.cpp
+    ffi/src/ffilib.cpp
+    ffi/src/lib.cpp
+    ffi/src/lua.cpp
+    ffi/src/main.cpp
+    ffi/src/parser.cpp
+    ffi/src/util.cpp
+)
+
 target_sources(Lute.Task PRIVATE
     task/include/lute/task.h
 

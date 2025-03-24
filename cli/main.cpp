@@ -67,6 +67,9 @@ lua_State* setupState(Runtime& runtime)
     luteopen_vm(L);
     lua_setfield(L, -2, "@lute/vm");
 
+    /*luteopen_cffi(L);
+    lua_setfield(L, -2, "@lute/ffi");*/
+
     static const luaL_Reg funcs[] = {
         {"require", lua_require},
         {nullptr, nullptr},
